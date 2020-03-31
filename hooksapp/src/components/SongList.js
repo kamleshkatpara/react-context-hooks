@@ -16,16 +16,6 @@ const SongList = () => {
         setSongs([...songs, { id: uuid(), title: title }])
     }
 
-    useEffect(() => {
-        console.log('useEffect hook ran', songs);
-    }, [songs]);
-
-
-    useEffect(() => {
-        console.log('useEffect hook ran', age);
-    }, [age]);
-
-
     return (
         <div className="song-list">
             <ul>

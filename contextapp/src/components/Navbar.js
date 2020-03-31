@@ -1,6 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { AuthContext } from '../contexts/AuthContext';
+import Demo from './Demo';
 
 const Navbar = () => {
 
@@ -13,6 +14,7 @@ const Navbar = () => {
     return (
         <nav style={{ background: theme.ui, color: theme.syntax }}>
             <h1>Context App</h1>
+            <Demo />
             <div onClick={toggleAuth}>
                 {isAuthenticated ? 'LoggedIn' : 'LoggedOut'}
             </div>
